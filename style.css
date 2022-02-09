@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    width:100%;
+    overflow:hidden;
+
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.days{
+    display: flex;
+    box-sizing: border-box;
+}
+.days p{
+    font-size: 25px;
+    margin:5px 5px;
+    
+}
+.current-time{
+    color:#00ff97;
+    font-size: 90px;
+}
+p{
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    color:#8a8a8a;
+    text-align:center;
+}
+button{
+    cursor:pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    color:#8a8a8a;
+    text-align:center;
+    background: none;
+    border: none;
+    margin:5px;
+    font-size: 25px;
+}
+
+.active-day,.activeBtn{
+    color:#00ff97;
+}
+@media screen and (max-width:1224px){
+    .days p{
+        font-size: 22px;
+    }
+    .current-time{
+        font-size:55px;
+    }
+    button{
+        font-size:22px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .days p{
+        display:none;
+        
+    }
+    .days p.active-day{
+        display:block;
+        font-size:13px;
+        
+    }
+    .current-time{
+        font-size:32px;
+        letter-spacing: 0in;
+    }
+    button{
+        font-size:13px;
+    }
+}
+
+@media screen and (max-width:900px){
+  
+    .days p{
+        font-size:20px;
+        
+    }
+    .current-time{
+        font-size:40px;
+        
+    }
+    button{
+        font-size:20px;
+    }
+}
